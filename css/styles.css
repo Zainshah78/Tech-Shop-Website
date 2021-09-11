@@ -60,8 +60,18 @@ header nav ul li {
     display: inline-block;
 }
 
+header nav ul li.menu-icon {
+    display: none;
+}
+
+header nav ul li.menu-icon img {
+    vertical-align: middle;
+    width: 24px;
+    height: auto;
+}
+ 
 header nav ul li a {
-    color: #3E3E3E;
+    color: #181515;
     font-size: 15px;
     letter-spacing: 0.37px;
     margin-right: 24px;
@@ -268,6 +278,7 @@ section.best-sellers .product-slider .product .product-info button {
     font-weight: 700;
     letter-spacing: 0.4px;
     line-height: 24px;
+    cursor: pointer;
 }
 
 section.best-sellers .product-slider .product:hover .product-info button {
@@ -579,6 +590,7 @@ footer .copyright-text {
         font-size: 40px;
         letter-spacing: 1px;
         line-height: 46px;
+        margin-top: 27px;
     }
     
     .hero-content p {
@@ -592,6 +604,7 @@ footer .copyright-text {
         letter-spacing: 0.35px;
         line-height: 21px;
         width: 196px;
+        margin: auto;
         
     }
 
@@ -608,6 +621,16 @@ footer .copyright-text {
 
     section.best-sellers .product-slider {
         margin-top: 48px;
+    }
+
+    section.best-sellers .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.best-sellers .product-slider .product {
+        min-width: 220px;
+        margin: 17px 8px;
     }
     
     section.best-sellers .product-slider .product .product-info .categories {
@@ -726,12 +749,17 @@ footer .copyright-text {
     section.best-sellers {
         padding-top: 64px;
     }
+
+    section.best-sellers .product-slider .product {
+        width: 82%;
+        max-width: 360px;
+    }
     
     section.best-sellers h2 {
-        font-size: 24px;
+        font-size: 36px;
         letter-spacing: 0.6px;
         line-height: 38px;
-        margin: 0 0 14px 0;
+        margin: 0 0 16px 0;
     }
 
     section.best-sellers hr {
@@ -778,7 +806,28 @@ footer .copyright-text {
         margin: 100px auto;
     }
 
+    section.newsletter form input {
+        max-width: 65%;
+    }
+    
+    section.newsletter form button {
+        max-width: 35%;
+    
+    }
 
+    footer .bottom-nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .bottom-nav ul {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    footer .bottom-nav ul:last-of-type {
+        margin-bottom: 0;
+    }
 
 }
 /* End of Design for Mobile Phones */
